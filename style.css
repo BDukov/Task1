@@ -1,0 +1,277 @@
+@font-face {
+  font-family: "Elektra";
+  src: url("./fonts/Elektra.otf");
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Elektra", sans-serif;
+  font-size: 12px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  margin: 1em 1em 1em 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #f1f1f1;
+  background-color: #fe4b47;
+  border-radius: 0.5em;
+}
+
+.link {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  padding: 0em 2em;
+  text-transform: uppercase;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  display: flex;
+  width: 1009;
+  height: auto;
+  background-color: white;
+  flex-direction: column;
+}
+
+/* HEADER */
+
+.head-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+}
+
+.head-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.head-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logo {
+  width: 2.8em;
+  height: auto;
+  font-size: 2em;
+  text-align: center;
+  cursor: pointer;
+  padding: 0.8em;
+  border-right: 2px solid #f1f1f1;
+}
+
+.phone-img {
+  width: 0.8em;
+  height: auto;
+  text-align: center;
+  cursor: pointer;
+  padding: 0.5em 0.5em 0.5em 1em;
+}
+
+.phone {
+  font-size: 2em;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  color: #40374a;
+}
+
+.close-btn {
+  font-size: 2.3em;
+  text-align: center;
+  cursor: pointer;
+  background-color: white;
+  border: none;
+  border-left: 2px solid #efefef;
+  padding: 1em 1.5em 1em 1.5em;
+}
+
+/* BANNER */
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  background-color: white;
+  width: 1009px;
+  height: 369px;
+  background-image: url(./public/banner.jpg);
+  background-size: cover;
+  gap: 2em;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 3em 7em 2em 7em;
+  width: 69em;
+}
+
+.text-left {
+  display: flex;
+}
+
+.checkbox {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.text-right {
+  display: flex;
+  position: relative;
+}
+
+.text {
+  font-size: 3em;
+  font-weight: 800;
+  margin-bottom: 0.5em;
+  color: #40374a;
+  line-height: 1em;
+  position: relative;
+}
+
+.off {
+  padding-top: 1.5em;
+  padding-right: 0.8em;
+  font-size: 1.1em;
+  font-weight: 500;
+  color: #40374a;
+  line-height: 1em;
+}
+
+.book-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1em;
+  width: 1000px;
+  margin-top: -2em;
+}
+
+.book-select {
+  width: 360px;
+  height: 58px;
+  color: #40374a;
+  font-weight: 600;
+  border: 2px solid #f1f1f1;
+  border-radius: 0.3em;
+  padding: 0.5em 1em 0.5em 1em;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("./public/arrow.svg"), url("/public/drill.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: right center, left center;
+  background-position-x: 95%, 5%;
+}
+
+.option {
+  color: #40374a;
+  font-size: 1.1em;
+}
+
+.input-postcode {
+  width: 190px;
+  height: 52px;
+  border: 2px solid #f1f1f1;
+  border-radius: 0.3em;
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+.book-now-btn {
+  width: 234px;
+  height: 56px;
+  background-color: #fe4b47;
+  color: white;
+  border: none;
+  font-size: 1em;
+  font-weight: 800;
+  cursor: pointer;
+  border-radius: 0.3em;
+}
+
+/* FOOTER */
+
+.footer {
+  margin: 2em 0em 2em 0em;
+  padding: 0 10em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+}
+
+.footer .step-one,
+.step-two,
+.step-three {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer .step-one-img,
+.step-two-img,
+.step-three-img {
+  width: 5em;
+  height: auto;
+}
+
+.footer .step-one-header,
+.step-two-header,
+.step-three-header {
+  font-size: 1.3em;
+  font-weight: 600;
+  color: #40374a;
+  text-align: center;
+}
+
+.footer .step-one-text,
+.step-two-text,
+.step-three-text {
+  font-size: 1em;
+  line-height: 1.5em;
+  color: #40374a;
+  text-align: center;
+  margin: -0.5em 0em 0em 0em;
+}
+
+.shape,
+.shape2 {
+  margin: -5em 0em 0em 0em;
+}
