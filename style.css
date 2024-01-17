@@ -192,7 +192,7 @@ body {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  background-image: url("./public/arrow.svg"), url("/public/drill.png");
+  background-image: url("./public/arrow.svg"), url("./public/drill.png");
   background-repeat: no-repeat, no-repeat;
   background-position: right center, left center;
   background-position-x: 95%, 5%;
